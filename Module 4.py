@@ -1,10 +1,9 @@
 import random
-#task 1
 number = 1
 while number <= 1000:
     if number%3 == 0:
         print(number)
-    number = number + 1
+    number +=1
 #task 2
 inches = float(input("Enter the inches: "))
 if inches >= 0:
@@ -42,7 +41,7 @@ while attempt < 5:
     if username == username_correct and password == password_correct:
         print("welcome")
         break
-    attempt = attempt + 1
+    attempt += 1
     print("please try again")
     username = input("Enter your username: ")
     password = input("Enter your password: ")
@@ -57,6 +56,6 @@ while points < total_points:
     y_position = random.uniform(-1,1)
     if x_position ** 2 + y_position ** 2 < 1:
         points_in_circle = points_in_circle + 1
-    points = points + 1
+    points += 1
 pi = (4*points_in_circle)/total_points
 print(f"pi approximation is {pi}")
