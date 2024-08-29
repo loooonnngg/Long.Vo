@@ -13,15 +13,13 @@ if inches >= 0:
 #task 3
 number = int(input("Enter the number, press enter to see the min and max number: "))
 min_num = max_num = number
-while number == number:
-    if number == "":
-        break
+while number != "":
     number = int(number)
     if number < min_num:
         min_num = number
     if number > max_num:
         max_num = number
-    number = input("Enter the number: ")
+    number = input("Enter the number, press enter to see the min and max number: ")
 print(min_num)
 print(max_num)
 #task 4
