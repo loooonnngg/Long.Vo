@@ -36,17 +36,19 @@ username_correct = "python"
 password_correct = "rules"
 username = input("Enter your username: ")
 password = input("Enter your password: ")
-attempt = 0
-while attempt < 5:
+attempt = 1
+while True:
     if username == username_correct and password == password_correct:
         print("welcome")
         break
-    print("please try again")
-    username = input("Enter your username: ")
-    password = input("Enter your password: ")
-    attempt += 1
+    else:
+        print("please try again")
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+        attempt += 1
     if attempt == 5:
         print("access denied")
+        break
 #task 6
 total_points = int(input("Enter the amount of total points: "))
 points = 0
