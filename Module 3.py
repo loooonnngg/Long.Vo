@@ -20,16 +20,16 @@ else:
 gender = str(input("Are you male or female?: "))
 hemoglobin = int(input("enter your hemoglobin value: "))
 if gender == "male":
-    if hemoglobin < 117:
+    if hemoglobin < 134:
         print("you have low hemoglobin")
-    elif 117 <= hemoglobin < 155:
+    elif 134 <= hemoglobin < 167:
         print("you have normal hemoglobin")
     else:
         print("you have high hemoglobin")
 elif gender == "female":
-    if hemoglobin < 134:
+    if hemoglobin < 117:
         print("you have low hemoglobin")
-    elif 134 <= hemoglobin < 167:
+    elif 117 <= hemoglobin < 155:
         print("you have normal hemoglobin")
     else:
         print("you have high hemoglobin")
