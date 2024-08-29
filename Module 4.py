@@ -41,10 +41,10 @@ while attempt < 5:
     if username == username_correct and password == password_correct:
         print("welcome")
         break
-    attempt += 1
     print("please try again")
     username = input("Enter your username: ")
     password = input("Enter your password: ")
+    attempt += 1
     if attempt == 5:
         print("access denied")
 #task 6
