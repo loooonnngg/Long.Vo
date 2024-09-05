@@ -6,9 +6,10 @@ while number <= 1000:
     number +=1
 #task 2
 inches = float(input("Enter the inches: "))
-if inches >= 0:
+while inches >= 0:
     centimeter = inches * 2.54
     print(centimeter)
+    inches = float(input("Enter the inches: "))
 #task 3
 number = int(input("Enter the number, press enter to see the min and max number: "))
 min_num = max_num = number
