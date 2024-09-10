@@ -2,7 +2,7 @@ import mysql.connector
 connection = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    password = 'long30112006',
+    password = 'sql_password',
     database = 'flight_game',
     collation = 'utf8mb4_general_ci',
     autocommit = True
