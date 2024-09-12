@@ -1,5 +1,5 @@
 import random
-#task 1
+'''#task 1
 number_of_dices = int(input("how many dices do you want to role?: "))
 sum_of_dice = 0
 for rolls in range(number_of_dices):
@@ -30,11 +30,11 @@ if user_input == not_prime:
     print("The number is not prime")
 else:
     print("The number is prime")
-
+'''
 #task 4
 cities_list = []
-for i in range(1,6):
+for i in range(5):
     city_input = input("Enter a city: ")
     cities_list.append(city_input)
-for city_input in cities_list:
-    print(city_input)
+for city in cities_list:
+    print(city)

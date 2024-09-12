@@ -1,4 +1,4 @@
-#tas 1
+#task 1
 list_of_seasons = ("winter","spring","summer","fall")
 season_number = int(input("enter number of a month: "))
 if season_number in (12, 1, 2):
