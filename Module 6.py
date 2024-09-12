@@ -3,7 +3,7 @@ import random
 def dice_roll():
     rolling = random.randint(1, 6)
     return rolling
-rolls_result = dice_roll()
+rolls_result = 0
 while rolls_result != 6:
     print(rolls_result)
     rolls_result = dice_roll()
