@@ -18,8 +18,8 @@ class Car:
         self.travelled_distance += hour*self.current_speed
     def get_travelled_distance(self):
         return self.travelled_distance
-    def __str__(self):
-        return f"{self.register_number} | {self.maximum_speed} | {self.current_speed} | {self.travelled_distance}"
+    def print_information(self):
+        print(f"{self.register_number} | {self.maximum_speed} | {self.current_speed} | {self.travelled_distance}")
 
 #task 4
 
@@ -34,7 +34,7 @@ class Race:
             car.drive(1)
     def print_status(self):
         for car in self.list_of_car:
-            print(str(car))
+            car.print_information()
     def race_finished(self):
         for car in self.list_of_car:
             if car.get_travelled_distance() >=10000:
